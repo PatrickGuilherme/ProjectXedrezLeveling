@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuGameController">
+   <children>
+      <ImageView fitHeight="541.0" fitWidth="716.0">
+         <image>
+            <Image url="@../img/xlMenu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCadastrar" layoutX="252.0" layoutY="443.0" mnemonicParsing="false" onAction="#cadastrarDadosJogador" prefHeight="48.0" prefWidth="249.0" style="-fx-background-color: blue; -fx-border-color: blue;" text="Cadastrar" textFill="#f5f5f5" />
+      <Label fx:id="txtReadyP1" layoutX="150.0" layoutY="491.0" prefHeight="32.0" prefWidth="82.0" text="Player 1" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtReadyP2" layoutX="553.0" layoutY="491.0" prefHeight="32.0" prefWidth="82.0" text="Player 2" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Circle fx:id="readyNot1" fill="RED" layoutX="131.0" layoutY="507.0" radius="9.0" stroke="#fffcfc00" strokeType="INSIDE" />
+      <Circle fx:id="readyNot2" fill="RED" layoutX="535.0" layoutY="507.0" radius="9.0" stroke="#fffcfc00" strokeType="INSIDE" />
+      <Circle fx:id="readyS1" fill="#00ff1e" layoutX="131.0" layoutY="507.0" radius="9.0" stroke="#fffcfc00" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="readyS2" fill="#00ff1e" layoutX="535.0" layoutY="507.0" radius="9.0" stroke="#fffcfc00" strokeType="INSIDE" visible="false" />
+      <ImageView fx:id="imgReadyP2" disable="true" fitHeight="528.0" fitWidth="249.0" layoutX="467.0" layoutY="6.0" visible="false">
+         <image>
+            <Image url="@../img/xlPlayer2Read.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgReadyP1" disable="true" fitHeight="535.0" fitWidth="263.0" visible="false">
+         <image>
+            <Image url="@../img/xlPlayer1Read.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNome" layoutX="252.0" layoutY="287.0" onKeyTyped="#verifyNome" prefHeight="39.0" prefWidth="249.0" promptText="Nome do player" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="txtNick" layoutX="252.0" layoutY="371.0" prefHeight="39.0" prefWidth="249.0" promptText="Nick" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label fx:id="labelNome" layoutX="253.0" layoutY="258.0" text="Nome" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNick" layoutX="253.0" layoutY="342.0" text="Nick" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="209.0" fitWidth="396.0" layoutX="179.0" layoutY="31.0">
+         <image>
+            <Image url="@../img/xlLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
